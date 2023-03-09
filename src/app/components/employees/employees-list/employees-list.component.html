@@ -11,6 +11,7 @@
         <th scope="col">Start Date</th>
         <th scope="col">End Date</th>
         <th scope="col">Status</th>
+        <th scope="col"> </th>
       </tr>
     </thead>
 
@@ -22,6 +23,7 @@
         <td>{{employee.startDate}}</td>
         <td>{{employee.endDate}}</td>
         <td>{{employee.status}}</td>
+        <td><a [routerLink]="['/employees', 'edit', employee.id]">View</a></td>
       </tr>
     </tbody>
   </table>

@@ -1,0 +1,48 @@
+<div class="container my-5">
+  <h1 class="mb-3">Edit Employee</h1>
+  <form #form="ngForm" >
+    <div class="mb-3 row">
+      <label for="id" class="col-sm-2 col-form-label">Id</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="id" name="id" [(ngModel)]=" employeeDetails.id" readonly>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="name" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]=" employeeDetails.name">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="address" class="col-sm-2 col-form-label">Address</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="address" name="address" [(ngModel)]=" employeeDetails.address">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]=" employeeDetails.phone">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="startDate" class="col-sm-2 col-form-label">Start Date</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="startDate" name="startDate" [(ngModel)]=" employeeDetails.startDate">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="endDate" class="col-sm-2 col-form-label">End Date</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="endDate" name="endDate" [(ngModel)]=" employeeDetails.endDate">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="status" class="col-sm-2 col-form-label">Status</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="status" name="status" [(ngModel)]=" employeeDetails.status">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
